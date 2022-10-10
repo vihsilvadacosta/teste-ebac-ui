@@ -8,7 +8,7 @@ describe('Funcionalidade Pré Cadastro', () => {
         cy.visit('minha-conta')
     });
 
-    it.only('Deve completar o Pré Cadastro com sucesso', () => {
+    it('Deve completar o Pré Cadastro com sucesso', () => {
         let nomeFaker = faker.name.firstName()
         let sobrenomeFaker = faker.name.lastName()
         let emailFaker = faker.internet.email(nomeFaker)
@@ -21,6 +21,11 @@ describe('Funcionalidade Pré Cadastro', () => {
         cy.get('#account_first_name').type(nomeFaker)
         cy.get('#account_last_name').type(sobrenomeFaker)
         cy.get('.woocommerce-Button').click()
+        cy.get('.woocommerce-message').should('contain', 'Detalhes da conta modificados com sucesso')
+    });
+    it.only('Deve completar o pré-cadastro com sucesso usando comando customizado', () => {
+        let emailFaker2 = faker.internet.email()
+        cy.preCadastro(emailFaker2, 'senha!@#forte', 'Vitória', 'Costa')
         cy.get('.woocommerce-message').should('contain', 'Detalhes da conta modificados com sucesso')
     });
     
