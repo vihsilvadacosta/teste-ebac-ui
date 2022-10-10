@@ -1,0 +1,47 @@
+[
+    {
+        "nome": "Cristiano",
+        "sobrenome": "Araújo",
+        "empresa": "Google",
+        "endereco": "R. Guilherme",
+        "numero": "12",
+        "pais": "Brasil",
+        "cidade": "São Paulo",
+        "estado": "São Paulo",
+        "cep": "01000100",
+        "telefone": "11999999959",
+        "email": "teste@teste.com"
+
+    },
+
+    {
+        "nome": "Demi",
+        "sobrenome": "Lovato",
+        "empresa": "Twitter",
+        "endereco": "Av. Paulista",
+        "numero": "1",
+        "pais": "Brasil",
+        "cidade": "São Paulo",
+        "estado": "São Paulo",
+        "cep": "01000150",
+        "telefone": "11999999979",
+        "email": "teste@teste.com"
+    },
+
+    {
+        "nome": "Júlia",
+        "sobrenome": "Fontini",
+        "empresa": "Magazine Luiza",
+        "endereco": "R. das Flores",
+        "numero": "45",
+        "pais": "Brasil",
+        "cidade": "São Paulo",
+        "estado": "São Paulo",
+        "cep": "08531345",
+        "telefone": "11992999999",
+        "email": "teste00@teste.com"
+    }
+
+
+
+]
